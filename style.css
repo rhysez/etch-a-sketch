@@ -1,16 +1,18 @@
 #container {
-    margin-top: 25px;
+    margin-top: 0px;
     display: inline-grid;
-    grid-template-columns: repeat(16, 2fr);
-    grid-template-rows: repeat(16, 2fr);
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: auto;
     border: 7.5px solid black;
     border-radius: 10px;
     height: 575px;
     width: 575px;
+    box-sizing: border-box;
+    background-color: snow;
 }
 
 .cell {
-   border: 1px solid black;
+   box-sizing: border-box;
 }
 
 #title {
@@ -19,7 +21,7 @@
     justify-content: center;
     width: 270px;
     height: 72px;
-    margin-left: 818px;
+    margin-left: 815px;
     margin-top: 50px;
     border-style: solid aqua;
     border-radius: 35px;
@@ -30,7 +32,25 @@
     display: flex;
     justify-content: center;
     gap: 75px;
-    margin-top: 40px;
+    margin-top: 20px;
+}
+
+#update {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 175px;
+    align-items: flex-start;
+    margin: 0;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 12px;
+    font-size: larger;
+    background-color: black;
+    color: snow;
+    text-align: center;
+    border-radius: 20px;
+    padding: 15px;
 }
 
 #gridsize {
@@ -41,6 +61,7 @@
     height: 30px;
     font-size: large;
     border-radius: 20px;
+    font-weight: bold;
 }
 
 #rainbow {
@@ -49,6 +70,7 @@
     border: none;
     width: 100px;
     font-size: large;
+    font-weight: bold;
     border-radius: 20px;
 }
 
@@ -57,8 +79,20 @@
     margin-top: 40px;
 }
 
+.quote {
+    background-color: slategray;
+    color: black;
+    width: 580px;
+    height: 30px;
+    margin-left: 661px;
+    margin-top: -15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 html {
-    background-color: snow;
+    background-color: slategrey;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
