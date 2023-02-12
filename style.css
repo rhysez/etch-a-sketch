@@ -19,11 +19,37 @@
     justify-content: center;
     width: 270px;
     height: 72px;
-    margin-left: 815px;
-    margin-top: 100px;
+    margin-left: 818px;
+    margin-top: 50px;
     border-style: solid aqua;
     border-radius: 35px;
     font-size: small;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    margin-top: 40px;
+}
+
+#gridsize {
+    background: black;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+    font-size: large;
+    border-radius: 20px;
+}
+
+#rainbow {
+    background: black;
+    color: white;
+    border: none;
+    width: 100px;
+    font-size: large;
+    border-radius: 20px;
 }
 
 #tipmessage {

@@ -2,6 +2,7 @@ const container = document.querySelector("#container");
 let cell = document.querySelectorAll('.cell');
 window.onload = createGrid();
 
+//creates a 16x16 grid
 function createGrid(){
     for (let i = 0; i < 256; i++){
         const div = document.createElement("div");
@@ -10,6 +11,7 @@ function createGrid(){
     }
 }
 
+// changes cell colors to black on mouseover
 function mouseOver(){
     let cell = document.querySelectorAll('.cell');
     cell.forEach((cell) => {
@@ -21,7 +23,7 @@ function mouseOver(){
 
 cell.onmouseover = mouseOver();
 
-console.log(container);
+
 
 
 
