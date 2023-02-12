@@ -1,5 +1,5 @@
 const container = document.querySelector("#container");
-let cell = document.querySelectorAll('.cell')
+let cell = document.querySelectorAll('.cell');
 window.onload = createGrid();
 
 function createGrid(){
@@ -10,9 +10,18 @@ function createGrid(){
     }
 }
 
+function mouseOver(){
+    let cell = document.querySelectorAll('.cell');
+    cell.forEach((cell) => {
+        cell.addEventListener('mouseover', function(){
+            cell.style.background = "black";
+        })
+    })
+}
+
+cell.onmouseover = mouseOver();
+
 console.log(container);
-
-
 
 
 
