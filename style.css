@@ -19,9 +19,10 @@
     display: flex;
     background-color: crimson;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     width: 270px;
     height: 72px;
-    margin-left: 815px;
     margin-top: 50px;
     border-style: solid aqua;
     border-radius: 35px;
@@ -80,19 +81,20 @@
 }
 
 .quote {
-    background-color: slategray;
     color: black;
     width: 580px;
-    height: 30px;
+    height: 20px;
     margin-left: 661px;
-    margin-top: -15px;
+    margin-top: auto;
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
-html {
-    background-color: slategrey;
+body {
+    background: linear-gradient(-25deg, #c7130c, #e73c7e, #a223d5, #2394d5);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    height: 100vh;
 }

@@ -51,3 +51,4 @@ function mouseOverRainbow(){
     let colorB = Math.floor(Math.random() * 256);
     let colorC = Math.floor(Math.random() * 256);
 }
+
