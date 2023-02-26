@@ -1,6 +1,6 @@
 const container = document.querySelector("#container");
 const buttonSize = document.querySelector("#gridsize");
-const buttonRainbow = document.querySelector("#gridsize");
+const buttonRainbow = document.querySelector("#rainbow");
 let cell = document.querySelectorAll('.cell');
 let cellAmount = 16;
 window.onload = createGrid(cellAmount);
@@ -26,6 +26,19 @@ function mouseOver(){
     })
 }
 
+// changes cell colors to random RGB value
+// UNFINISHED
+function mouseOverRainbow(){
+    let cell = document.querySelectorAll('.cell');
+    let color = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256))
+                 + ',' + (Math.floor(Math.random() * 256)) + ')';
+    cell.forEach((cell) => {
+        cell.addEventListener('mouseover', function(){
+            cell.style.background = color;
+        })
+    })
+}
+
 // resizes the grid and resets sketch
 buttonSize.addEventListener('click', () => {
     for (i = 0; i < cell.length; i++){
@@ -46,9 +59,7 @@ buttonSize.addEventListener('click', () => {
         mouseOver();
 });
 
-function mouseOverRainbow(){
-    let colorA = Math.floor(Math.random() * 256);
-    let colorB = Math.floor(Math.random() * 256);
-    let colorC = Math.floor(Math.random() * 256);
-}
+buttonRainbow.addEventListener('click', () => {
+    cell.onmouseover = mouseOverRainbow();
+});
 
