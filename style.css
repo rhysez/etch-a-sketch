@@ -1,14 +1,18 @@
 #container {
-    margin-top: 0px;
+    margin-top: 20px;
     display: inline-grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: auto;
-    border: 7.5px solid black;
-    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgb(98, 97, 97);
     height: 575px;
     width: 575px;
     box-sizing: border-box;
-    background-color: snow;
+    background-color: rgb(224, 220, 220);
+}
+
+.header {
+    background-image: linear-gradient(rgb(168, 167, 167), snow);
+    padding-top: 10px;
 }
 
 .cell {
@@ -17,15 +21,15 @@
 
 #title {
     display: flex;
-    background-color: crimson;
+    background-image: linear-gradient(90deg, rgb(121, 242, 155), rgb(241, 134, 255));
+    color: snow;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
     width: 270px;
     height: 72px;
-    margin-top: 50px;
-    border-style: solid aqua;
-    border-radius: 35px;
+    margin-top: 20px;
+    box-shadow: 10px 5px 5px rgb(98, 97, 97);
     font-size: small;
 }
 
@@ -36,49 +40,31 @@
     margin-top: 20px;
 }
 
-#update {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 175px;
-    align-items: flex-start;
-    margin: 0;
-    position: absolute;
-    margin-left: 50px;
-    margin-top: 12px;
-    font-size: larger;
-    background-color: black;
-    color: snow;
-    text-align: center;
-    border-radius: 20px;
-    padding: 15px;
-}
-
 #gridsize {
-    background: black;
-    color: white;
+    background: rgb(121, 242, 155);
+    color: snow;
     border: none;
     width: 100px;
     height: 30px;
     font-size: large;
-    border-radius: 20px;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 #rainbow {
-    background: black;
-    color: white;
+    background: rgb(241, 134, 255);
+    color: snow;
     border: none;
     width: 100px;
     font-size: large;
     font-weight: bold;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 #tipmessage {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .quote {
@@ -92,9 +78,10 @@
 }
 
 body {
-    background: linear-gradient(-25deg, #c7130c, #e73c7e, #a223d5, #2394d5);
+    background-color: snow;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Impact, Arial;
     margin: 0px;
-    height: 100%;
+    padding: 0;
+    height: 100vh;
 }
