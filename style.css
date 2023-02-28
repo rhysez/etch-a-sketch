@@ -36,24 +36,6 @@
     margin-top: 20px;
 }
 
-#update {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 175px;
-    align-items: flex-start;
-    margin: 0;
-    position: absolute;
-    margin-left: 50px;
-    margin-top: 12px;
-    font-size: larger;
-    background-color: black;
-    color: snow;
-    text-align: center;
-    border-radius: 20px;
-    padding: 15px;
-}
-
 #gridsize {
     background: black;
     color: white;
@@ -76,7 +58,8 @@
 }
 
 #tipmessage {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-top: 40px;
 }
 
@@ -84,7 +67,6 @@
     color: black;
     width: 580px;
     height: 20px;
-    margin-left: 661px;
     margin-top: auto;
     align-items: center;
     justify-content: center;
