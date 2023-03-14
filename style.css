@@ -1,5 +1,6 @@
 #container {
     margin-top: 20px;
+    margin-bottom: 25px;
     display: inline-grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: auto;
@@ -51,7 +52,7 @@
     border-radius: 5px;
 }
 
-#rainbow {
+#random {
     background: rgb(241, 134, 255);
     color: snow;
     border: none;
@@ -59,6 +60,65 @@
     font-size: large;
     font-weight: bold;
     border-radius: 5px;
+}
+
+.colorscontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.colors {
+    display: flex;
+    width: 450px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.color {
+    height: 30px;
+    width: 50px;
+    border: solid gray 2px;
+    justify-content: center;
+    box-shadow: 10px 5px 5px rgb(98, 97, 97);
+}
+
+.color:hover {
+    height: 35px;
+    width: 55px;
+}
+
+#red {
+    background-color: red;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#green {
+    background-color: green;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#purple {
+    background-color: purple;
+}
+
+#pink {
+    background-color: pink;
+}
+
+#white {
+    background-color: white;
 }
 
 #tipmessage {
